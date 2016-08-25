@@ -1,0 +1,59 @@
+ /*
+ * Base structure
+ */
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+.navbar{
+    min-height:80px;
+}
+
+.navbar-inverse{
+    background-color:#3f5d72;
+    .navbar-brand,
+    .navbar-nav> li > a,
+    .navbar-nav> li > a:hover{
+        color:rgba(240,240,240,0.6);
+        font-weight:100;
+        letter-spacing: 3px;
+    }  
+    .navbar-brand{
+        color:white;
+        line-height:80px;
+        padding:0 36px;
+        font-size:30px;
+    }
+      
+}
+
+.sidebar-toggler{
+    margin-top:(80px-18px)/2;
+    font-size:18px;
+    color:rgba(255,255,255,0.33);    
+}
+
+.navbar-nav > li > a{
+    line-height: 50px;
+}
+
+.navbar-right{
+    img+i{
+        margin-left:5px;
+    }
+}
