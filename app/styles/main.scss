@@ -1,9 +1,10 @@
-$icon-font-path: './fonts/';
+$icon-font-path: '../fonts/';
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
+@import "components/nav.scss";
+@import "components/sidebar.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
