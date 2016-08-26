@@ -1,0 +1,42 @@
+
+$btn-primary-color:#428bca;
+$btn-primary-bg:#428bca;
+@import "components/switch.scss";
+@import "components/slider.scss";
+
+.modal-content {
+    border-radius:0;
+    button.close{
+        color:#2c95dd;
+        opacity: 0.5;
+    }
+    button{
+        border-radius:0;        
+    }
+    .modal-footer{
+        text-align: left;
+    }
+    .btn-primary{
+        border:1px solid transparent;
+        background-color:$btn-primary-color;
+    }
+    .btn-default{
+        border:1px solid transparent;
+    }
+    .modal-body{
+        h4{        
+            height:45px;
+            line-height:45px;
+            margin:20px -15px 10px;
+            padding:0 15px;
+            font-size:16px;
+            font-weight: normal;
+            color:#444;
+            background-color:#f6f6f6;
+            &:first-child{
+                margin-top:-15px;
+            }
+        }
+
+    }
+}

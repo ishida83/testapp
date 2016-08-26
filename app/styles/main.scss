@@ -5,6 +5,7 @@ $icon-font-path: '../fonts/';
 // endbower
 @import "components/nav.scss";
 @import "components/sidebar.scss";
+@import "components/modal.scss";
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -174,4 +175,108 @@ body {
         color: black; 
       }
   } 
+}
+
+section{
+  header{
+    h1{
+      font-size:16px;
+      color:#444;
+      font-weight: normal;
+      text-align: left;
+    }
+  }
+  article{
+    overflow:hidden;
+    border-bottom:1px solid #e8e8e8;
+    padding-bottom:20px;
+    &:last-of-type{
+      border-bottom: 0;
+    }
+
+    dl {
+        display: block;
+        text-align: left;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        dt, dd{
+          float:left;
+          line-height: 35px;
+        }
+        dd{
+          font-weight:900;
+          color:#444;
+        }
+        dt{
+          margin-right:30%;
+          clear:left;
+          font-size:15px;
+          color:#444;
+          font-weight: normal;
+        }
+    }
+  }
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+@media (min-width: 768px){
+  .container-fluid{
+    .navbar{    
+      margin-left:213px;
+      height:60px;
+      min-height: 60px;
+      background-color:#f2f2f2;
+      border:1px solid #e8e8e8;
+      border-left:0;      
+      border-radius:0;    
+      .navbar-header{
+        padding-left:20px;
+        ul{
+            float:left;
+            display:inline-block;
+              list-style: none;
+              height: 60px;
+              line-height: 52px;
+              box-sizing: border-box;
+              li{                
+                padding: 0 5px;
+                &.active{
+                  border-bottom: 6px solid #d3d3d3;
+                }
+              }
+        }
+      }
+      .navbar-text.navbar-right{
+        margin-right:20px;
+        a{
+          text-decoration: none;
+          color:#444;
+          i{
+            color:#3f5d72;            
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.container-fluid{
+  table{
+    tr td:last-child{
+      a{
+        padding:0 10px;
+        color:#444;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
