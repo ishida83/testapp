@@ -215,8 +215,11 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>    
+    <script src="/bower_components/requirejs/require.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+
+
     
     <!-- build:js scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -234,8 +237,9 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    
+        
     <!-- endbuild -->
-    <script src="/bower_components/requirejs/require.js" data-main="scripts/main"></script>
+    <script src="scripts/app.js"></script>
+    
   </body>
 </html>
