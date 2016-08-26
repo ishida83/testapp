@@ -36,6 +36,35 @@
   }
 }
 
+.nav-sidebar {
+    .sub-menu{
+        li{
+            list-style: none;
+            padding: 0;
+            height: 40px;
+            margin: 0;
+            border:1px solid transparent;
+            line-height: 40px;
+            margin-left: -40px;
+            padding-left: 70px;
+            a{
+                color:#888;
+                &:hover{
+                    text-decoration: none;
+                }
+            }  
+        }
+
+        li.active{
+            background: #f2f2f2;
+            border:1px solid #e8e8e8;
+            a{
+                color:#444;
+            }
+        }
+    }
+}
+
 .nav-sidebar > li > a{
     &{
         border:1px solid transparent;
@@ -49,39 +78,22 @@
         background-color: #f2f2f2;
         border:1px solid #e8e8e8;
     }
-    &:focus{
-        background-color:transparent;
-        border:1px solid transparent;
-    }
+    // &:focus{
+    //     background-color:transparent;
+    //     border:1px solid transparent;
+    // }
     i{
         float:right;
         font-weight: 900;
         color:#dedee0;
     }
 }
-
-.nav-sidebar > li:nth-child(2) > a{
-    background-position: 0 -65px;
-}
-.nav-sidebar > li:nth-child(3) > a{
-    background-position: 0 -125px;
-}
-.nav-sidebar > li:nth-child(4) > a{
-    background-position: 0 -185px;
-}
-.nav-sidebar > li:nth-child(5) > a{
-    background-position: 0 -245px;
-}
-.nav-sidebar > li:nth-child(5) > a{
-    background-position: 0 -245px;
-}
-
-.nav-sidebar > li:nth-child(6) > a{
-    background-position: 0 -305px;
-}
-
-.nav-sidebar > li:nth-child(7) > a{
-    background-position: 0 -365px;
+.nav-sidebar{
+    @for $i from 2 through 7 {
+        li:nth-child(#{$i}) > a{
+            background-position:0 -65px-60*$i+120;             
+        }
+    }
 }
 
 .nav-sidebar > li.active > a{
@@ -90,8 +102,8 @@
         background-color: #f2f2f2;
         border:1px solid #e8e8e8;
     }    
-    &:focus{
-        background-color:transparent;
-        border:1px solid transparent;
-    }
+    // &:focus{
+    //     background-color:transparent;
+    //     border:1px solid transparent;
+    // }
 }
