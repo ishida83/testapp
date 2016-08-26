@@ -13,7 +13,7 @@ requirejs.config({
     }
 });
 
-requirejs(['components/sidebar'],function(sidebar){
+requirejs(['components/sidebar','components/donut'],function(sidebar){
     sidebar.init('.nav.nav-sidebar');
 });
     
